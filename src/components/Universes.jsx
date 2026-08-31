@@ -1,9 +1,9 @@
 const universes = [
-  { emoji: '🥐', name: 'Vale do Francês', meta: 'Français · Cultura & conversação' },
-  { emoji: '🗽', name: 'Cúpula do Inglês', meta: 'English · Comunicação global' },
-  { emoji: '💃', name: 'Santuário do Espanhol', meta: 'Español · Vida cotidiana' },
-  { emoji: '龍', name: 'Arquipélago do Mandarim', meta: '中文 · Novos horizontes' },
-  { emoji: '⛩️', name: 'Domínio do Japonês', meta: '日本語 · Cultura & contexto' },
+  { name: 'Vale do Francês', meta: 'Français · Cultura & conversação', image: '/universe-france.png' },
+  { name: 'Cúpula do Inglês', meta: 'English · Comunicação global', image: '/universe-english.png' },
+  { name: 'Santuário do Espanhol', meta: 'Español · Vida cotidiana', image: '/universe-spanish.png' },
+  { name: 'Arquipélago do Mandarim', meta: '中文 · Novos horizontes', image: '/universe-mandarin.png' },
+  { name: 'Domínio do Japonês', meta: '日本語 · Cultura & contexto', image: '/universe-japan.png' },
 ];
 
 export default function Universes() {
@@ -18,13 +18,14 @@ export default function Universes() {
         </div>
         <div className="flex gap-5 overflow-x-auto pb-5 snap-x snap-mandatory [scrollbar-width:none]">
           {universes.map((item) => (
-            <article key={item.name} className="min-w-[260px] md:min-w-[300px] snap-start rounded-3xl border border-purple-400/20 bg-slate-950/70 p-7 backdrop-blur-md hover:-translate-y-1 hover:border-purple-400/50 transition-all duration-300">
-              <div className="text-4xl mb-10">{item.emoji}</div>
-              <div className="h-24 rounded-2xl bg-gradient-to-br from-purple-500/10 via-indigo-500/5 to-amber-400/5 border border-white/5 mb-6 flex items-center justify-center">
-                <span className="text-[10px] uppercase tracking-[0.28em] text-purple-200/70">ZION UNIVERSE</span>
+            <article key={item.name} className="group relative min-w-[260px] md:min-w-[300px] h-[360px] snap-start rounded-3xl border border-purple-400/20 bg-slate-950/70 overflow-hidden hover:-translate-y-1 hover:border-purple-400/50 transition-all duration-300">
+              <img src={item.image} alt={item.name} className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-700" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#07090d] via-[#07090d]/45 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-7">
+                <span className="text-[9px] uppercase tracking-[0.28em] text-amber-300/80">Zion Universe</span>
+                <h3 className="text-xl font-bold text-white mt-2">{item.name}</h3>
+                <p className="text-sm text-slate-300/75 mt-2">{item.meta}</p>
               </div>
-              <h3 className="text-xl font-bold text-white">{item.name}</h3>
-              <p className="text-sm text-slate-500 mt-2">{item.meta}</p>
             </article>
           ))}
         </div>
