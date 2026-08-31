@@ -23,20 +23,20 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="relative w-full max-w-6xl mt-5 md:mt-2">
+        <div className="relative w-full max-w-7xl mt-3 md:mt-0 flex justify-center">
           <motion.img
             src="/watermarked_img_12262838082204909694-removebg-preview.png"
             alt="Zion, seu guia explorador poliglota"
             initial={{ opacity: 0, y: 18, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="w-full h-auto object-contain drop-shadow-[0_25px_60px_rgba(0,0,0,0.75)]"
+            className="w-[112%] max-w-none md:w-[108%] lg:w-[106%] h-auto object-contain drop-shadow-[0_25px_60px_rgba(0,0,0,0.75)]"
           />
         </div>
 
         <a
           href="#passaporte"
-          className="relative -mt-1 md:-mt-5 px-10 md:px-14 py-4 bg-gradient-to-r from-purple-700 via-indigo-600 to-purple-700 border border-purple-200/40 text-white font-semibold text-xs md:text-sm tracking-[0.24em] uppercase rounded-2xl shadow-[0_0_35px_rgba(168,85,247,0.5)] hover:shadow-[0_0_55px_rgba(168,85,247,0.8)] hover:border-purple-100 transition-all duration-300 hover:scale-105 active:scale-95"
+          className="relative -mt-3 md:-mt-7 px-10 md:px-14 py-4 bg-gradient-to-r from-purple-700 via-indigo-600 to-purple-700 border border-purple-200/40 text-white font-semibold text-xs md:text-sm tracking-[0.24em] uppercase rounded-2xl shadow-[0_0_35px_rgba(168,85,247,0.5)] hover:shadow-[0_0_55px_rgba(168,85,247,0.8)] hover:border-purple-100 transition-all duration-300 hover:scale-105 active:scale-95"
         >
           INICIAR EXPEDIÇÃO
         </a>
