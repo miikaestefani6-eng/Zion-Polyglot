@@ -25,7 +25,7 @@ export default function Hero() {
 
         <div className="relative w-full max-w-6xl mt-5 md:mt-2">
           <motion.img
-            src="/zion-poses-group.png"
+            src="/watermarked_img_12262838082204909694-removebg-preview.png"
             alt="Zion, seu guia explorador poliglota"
             initial={{ opacity: 0, y: 18, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
