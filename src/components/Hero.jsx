@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative min-h-screen bg-[#080B10] text-white pt-28 pb-10 px-5 overflow-hidden flex flex-col justify-between">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-70 pointer-events-none"
-        style={{ backgroundImage: "url('/hero-bg-mystic.png')" }}
+        style={{ backgroundImage: "url('/hero-bg-mystic.jpg')" }}
       />
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(8,11,16,0.72),rgba(8,11,16,0.28)_45%,rgba(8,11,16,0.92))] pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_55%,rgba(124,58,237,0.10),transparent_42%)] pointer-events-none" />
