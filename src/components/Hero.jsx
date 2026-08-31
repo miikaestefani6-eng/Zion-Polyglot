@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
 
         <a
-          href="#passaporte"
+          href="/expedicao"
           className="relative -mt-3 md:-mt-7 px-10 md:px-14 py-4 bg-gradient-to-r from-purple-700 via-indigo-600 to-purple-700 border border-purple-200/40 text-white font-semibold text-xs md:text-sm tracking-[0.24em] uppercase rounded-2xl shadow-[0_0_35px_rgba(168,85,247,0.5)] hover:shadow-[0_0_55px_rgba(168,85,247,0.8)] hover:border-purple-100 transition-all duration-300 hover:scale-105 active:scale-95"
         >
           INICIAR EXPEDIÇÃO
