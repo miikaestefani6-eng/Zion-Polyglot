@@ -1,9 +1,9 @@
 const universes = [
-  { name: 'Vale do Francês', meta: 'Français · Cultura & conversação', image: '/universe-france.png' },
-  { name: 'Cúpula do Inglês', meta: 'English · Comunicação global', image: '/universe-english.png' },
-  { name: 'Santuário do Espanhol', meta: 'Español · Vida cotidiana', image: '/universe-spanish.png' },
-  { name: 'Arquipélago do Mandarim', meta: '中文 · Novos horizontes', image: '/universe-mandarin.png' },
-  { name: 'Domínio do Japonês', meta: '日本語 · Cultura & contexto', image: '/universe-japan.png' },
+  { name: 'Vale do Francês', meta: 'Français · Cultura & conversação', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Cúpula do Inglês', meta: 'English · Comunicação global', image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Santuário do Espanhol', meta: 'Español · Vida cotidiana', image: 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Arquipélago do Mandarim', meta: '中文 · Novos horizontes', image: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=900&q=85' },
+  { name: 'Domínio do Japonês', meta: '日本語 · Cultura & contexto', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85' },
 ];
 
 export default function Universes() {
@@ -19,7 +19,7 @@ export default function Universes() {
         <div className="flex gap-5 overflow-x-auto pb-5 snap-x snap-mandatory [scrollbar-width:none]">
           {universes.map((item) => (
             <article key={item.name} className="group relative min-w-[260px] md:min-w-[300px] h-[360px] snap-start rounded-3xl border border-purple-400/20 bg-slate-950/70 overflow-hidden hover:-translate-y-1 hover:border-purple-400/50 transition-all duration-300">
-              <img src={item.image} alt={item.name} className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-700" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <img src={item.image} alt={item.name} className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#07090d] via-[#07090d]/45 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-7">
                 <span className="text-[9px] uppercase tracking-[0.28em] text-amber-300/80">Zion Universe</span>
